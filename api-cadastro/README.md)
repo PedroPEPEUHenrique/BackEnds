@@ -1,0 +1,21 @@
+API de Validação de Cadastros (Node.js & Express)
+Este projeto é uma API desenvolvida para validar dados de entrada em sistemas de cadastro. O foco principal é a implementação de Middlewares de Validação e tratamento de erros em requisições HTTP.
+
+🚀 Funcionalidades
+Validação de campos obrigatórios.
+
+Verificação de formato de e-mail via Regex.
+
+Validação de regras de negócio (idade mínima de 16 anos).
+
+Verificação de integridade de senhas (tamanho e confirmação).
+
+Geração de identificadores únicos temporários.
+
+🛠️ Tecnologias
+Node.js: Ambiente de execução.
+
+Express: Framework web para criação de rotas e middlewares.
+
+📌 Endpoints
+POST /api/v1/cadastros: Recebe os dados do usuário e retorna um ID caso sejam válidos.
