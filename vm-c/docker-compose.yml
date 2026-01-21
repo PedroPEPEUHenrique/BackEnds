@@ -1,0 +1,33 @@
+version: 'latest'
+
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:8090"
+    volumes:
+      - ./www:/var/www/html
+      - ./nginx/conf.d:/etc/nginx/conf.d
+    depends_on:
+      - php
+
+  php:
+    image: php:8-fpm
+    volumes:
+      - ./www:/var/www/html
+
+  db:
+    image: mariadb:10.6
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: appdb
+    volumes:
+      - db_data:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"
+
+volumes:
+  db_data:
