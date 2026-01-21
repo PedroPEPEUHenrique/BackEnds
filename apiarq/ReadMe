@@ -1,0 +1,23 @@
+# Blog Engine API (Express & Prisma)
+
+A robust backend for a content management system (CMS) or blog, featuring relational data management between users and posts. This project demonstrates integration with PostgreSQL and the use of Prisma ORM for type-safe database operations.
+
+## 🚀 Technologies
+
+- **Node.js & Express**: Web framework and runtime.
+- **Prisma ORM**: Modern database toolkit for PostgreSQL.
+- **Supabase**: Cloud PostgreSQL database hosting.
+- **Dotenv**: Environment variable management.
+
+## 🏗️ Database Schema
+
+The API manages two main entities with a one-to-many relationship:
+- **User**: Name and unique email.
+- **Post**: Title, content, slug, and publication status, linked to an author.
+
+
+## 🛠️ Setup & Installation
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/your-username/your-repo.git](https://github.com/your-username/your-repo.git)
