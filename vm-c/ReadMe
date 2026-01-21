@@ -1,0 +1,20 @@
+## 🐳 Dockerized Development Environment (LEMP Stack)
+
+Este repositório inclui uma configuração de Docker Compose para facilitar o setup do ambiente de desenvolvimento. Com um único comando, é possível subir toda a infraestrutura necessária para a execução das APIs.
+
+### Componentes:
+- **Nginx**: Servidor web configurado para servir a aplicação.
+- **PHP 8-FPM**: Processamento de scripts PHP de alta performance.
+- **MariaDB 10.6**: Base de dados relacional para armazenamento persistente.
+- **Adminer**: Ferramenta de gestão de base de dados via interface web.
+
+### Como utilizar:
+1. Certifique-se de que o Docker está instalado.
+2. Na raiz do projeto, execute:
+   ```bash
+   docker-compose up -d
+
+
+3. Aceda à aplicação em http://localhost:8090.
+
+4. Aceda ao gestor da base de dados em http://localhost:8080.
